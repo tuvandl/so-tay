@@ -1,5 +1,10 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Sổ tay chuyên môn</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="logo-192.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0C1654">
+
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Kèm cẩm nang 8 ngành chủ chốt tại Lâm Đồng. Ngân hàng 3.000 câu hỏi song ngữ Việt – Anh: thuế, lao động – BHXH, kế toán – kiểm soát – kiểm toán (VSA, IFRS), tài chính, kế toán quản trị, Thực chiến nâng cao (COSO, kiểm toán BCTC, gian lận, case) và Kinh tế học (vĩ mô, vi mô, phân tích quyết định, nâng cao, thực chiến).">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,7 +51,7 @@ p { margin: 0; }
 .top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--appbar); color: var(--appbar-ink); border-bottom: 1px solid var(--appbar-line); }
 .top-row { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding-block: 9px; }
 .brand { display: flex; align-items: center; gap: 12px; color: inherit; min-width: 0; background: none; border: 0; padding: 0; text-align: left; }
-.brand-mark { flex: none; width: 34px; height: 34px; border-radius: 8px; display: grid; place-items: center; background: var(--appbar-ink); color: var(--appbar); font-family: var(--f-mono); font-weight: 600; font-size: .82rem; letter-spacing: -.02em; }
+.brand-mark { flex: none; width: 40px; height: 40px; border-radius: 8px; display: grid; place-items: center; background: var(--appbar-ink); color: var(--appbar); font-family: var(--f-mono); font-weight: 600; font-size: .82rem; letter-spacing: -.02em; }
 .brand-name { display: block; font-weight: 800; font-size: 1.02rem; line-height: 1.15; letter-spacing: -.01em; white-space: nowrap; }
 .brand-sub { display: block; font-size: .72rem; color: var(--appbar-muted); line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .top-tools { display: flex; align-items: center; gap: 10px; flex: none; }
@@ -365,7 +370,7 @@ main { padding-block: 22px 40px; min-height: 60vh; }
 }
 @media (max-width: 420px) {
   .brand { gap: 9px; }
-  .brand-mark { display: none; }
+  .brand-mark { width: 30px; height: 30px; }
   .brand-name { font-size: .9rem; }
   .top-tools { gap: 6px; }
   .seg button { padding: 6px 8px; min-width: 34px; }
@@ -538,6 +543,7 @@ main { padding-block: 22px 40px; min-height: 60vh; }
 .top .seg { border-color: var(--line-strong); }
 .top .seg button { color: var(--muted); }
 .top .seg button[aria-pressed="true"] { background: var(--ink); color: #fff; }
+.brand-mark img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .brand-mark { box-shadow: inset 0 0 0 1px var(--line); }
 .modebar { background: var(--surface); }
 .mtab { color: var(--muted); }
